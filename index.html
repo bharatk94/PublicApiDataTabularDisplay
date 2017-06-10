@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>try3</title>
+      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+      <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+      <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+      <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand" href="try3.html">ApiDataDisplayer</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="wrapper" style="text-align: center;">
+         <label for="apilink">Please Enter URL to fetch JSON data</label>
+         <input type="text" id="urlLink" name="apilink" list="links" placeholder="eg::https://community.data.gov.in/all-visualizations/" >
+         <datalist id="links">
+            <option>https://data.gov.in/node/791101/datastore/export/json</option>
+            <option>https://data.gov.in/node/2878261/datastore/export/json</option>
+            <option>https://data.gov.in/node/1077161/datastore/export/json</option>
+            <option>https://data.gov.in/node/785081/datastore/export/json</option>
+            <option>https://data.gov.in/node/2556001/datastore/export/json</option>
+            <option> https://data.gov.in/node/100102/datastore/export/json</option>
+            <option>https://data.gov.in/node/935441/datastore/export/json</option>
+         </datalist>
+         <button id="btn">Fetch Data</button>
+      </div>
+      <div class="container table-responsive">
+         <table id="table1" class= "table table-inverse table-bordered table-hover table-condensed sortable">
+            <caption>TABLE 1::DATA TABLE</caption>
+         </table>
+      </div>
+      <div class="container table-responsive">
+         <table id="table2" class= "table table-bordered table-hover table-condensed sortable">
+            <caption>TABLE 2::FIELDS TABLE</caption>
+         </table>
+      </div>
+      <script src="index.js" type="text/javascript" charset="utf-8" ></script>
+   </body>
+</html>

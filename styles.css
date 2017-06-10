@@ -1,0 +1,73 @@
+.container {
+  margin-top: 25px;
+  max-height: 250px;
+  padding: 0px;
+}
+
+body {
+  background-color: darkslategrey;
+  color: #fff;
+}
+
+label,
+caption {
+  color: #fff;
+}
+
+th {
+  font-weight: 900;
+}
+
+table {
+  max-height: 300px;
+}
+
+.table {
+  margin-bottom: 0px;
+}
+
+.wrapper {
+  border: 1px solid grey;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+#btn {
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 6px;
+  background-color: #222;
+  color: floralwhite;
+  margin-top: 10px;
+}
+
+#urlLink {
+  color: black;
+  width: 75%;
+}
+
+table,
+tr,
+th,
+td {
+  border: 3px solid black;
+}
+
+tr:hover {
+  color: black;
+  font-weight: 600;
+  
+}
+
+caption {
+  display: table-caption;
+  text-align: center;
+}
+
+table.sortable thead {
+  background-color: #eee;
+  color: #666666;
+  font-weight: bold;
+  cursor: pointer;
+}
